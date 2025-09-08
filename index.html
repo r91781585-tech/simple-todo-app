@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO - Simple Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>T O D O</h1>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </header>
+        
+        <div class="todo-container">
+            <div class="input-section">
+                <input type="text" id="todoInput" placeholder="Create a new todo..." maxlength="100">
+                <button id="addBtn">Add</button>
+            </div>
+            
+            <div class="todo-list-container">
+                <div class="filter-section">
+                    <span class="items-left" id="itemsLeft">0 items left</span>
+                    <div class="filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="active">Active</button>
+                        <button class="filter-btn" data-filter="completed">Completed</button>
+                    </div>
+                    <button class="clear-completed" id="clearCompleted">Clear Completed</button>
+                </div>
+                
+                <ul class="todo-list" id="todoList">
+                    <!-- Todo items will be added here dynamically -->
+                </ul>
+                
+                <div class="drag-info">
+                    <p>Drag and drop to reorder list</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Build By Aditya Rastogi</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
